@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>project docs</title>
+    <style>
+        body {
+            display: flex;
+            gap: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            width: 220px;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        pre {
+            background: #5f5f;
+            padding: 12px;
+            overflow: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid red;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h3>contents</h3>
+        <ul>
+            <li><a href="#intro">introduction</a></li>
+            <li><a href="#install">installation</a></li>
+            <li><a href="#api">API Reference</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <article id="intro">
+            <h1>introduction</h1>
+            <p>Short project overview and goals</p>
+        </article>
+        <article id="Install">
+            <h2>installation</h2>
+            <pre><code>npm install my-library# or pip install my-library</code></pre>
+        </article>
+        <article id="api">
+            <h2>API Reference</h2>
+            <section>
+                <h3>get user(id)</h3>
+                <p>Return a user object.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>id</td>
+                            <td>String</td>
+                            <td>user</td>
+                            <td>Identifier</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h4>Quick links</h4>
+        <p>version: 1.0.0</p>
+    </aside>
+</body>
+
+</html>
