@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pricing</title>
 
-    </head>
-    <body>
-        <h1>Pricing</h1>
-        <div clas
-    </body>
+<head>
+    <title>Pricing</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            border: 1px solid yellow;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4)
+        }
+
+        .pro {
+            border-color: brown;
+            background: #f0f6ff;
+            transform: scale(1.02)
+        }
+
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform.15s
+        }
+
+        button:hover {
+            transform: scale(1.04);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Pricing</h1>
+    <div clas="grid">
+        <div class="card">
+            <h2>Pro</h2>
+            <p>100rs</p>
+            <button>choose plan</button>
+        </div>
+        <div class="card pro">
+            <h2>Pro</h2>
+            <p>20000rs</p>
+            <button>choose plan</button>
+        </div>
+        <div class="card">
+            <h2>Pro</h2>
+            <p>500rs</p>
+            <button>choose plan</button>
+        </div>
+    </div>
+</body>
+
 </html>
